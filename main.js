@@ -86,7 +86,8 @@ autoUpdater.on('download-progress', (progressObj) => {
   sendStatusToWindow(log_message);
 })
 autoUpdater.on('update-downloaded', (info) => {
-  sendStatusToWindow('Update downloaded');
+  sendStatusToWindow('Update downloaded - please restart LDCT to use latest version');
+  autoUpdater.quitAndInstall();  
 });
 app.on('ready', function() {
   // Create the Menu

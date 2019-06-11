@@ -1,11 +1,11 @@
 {
   "name": "electron-updater-example",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "npm build -p always"
+    "publish": "build -p always"
   },
   "devDependencies": {
     "electron": "^3.0.2",
@@ -19,7 +19,7 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "grahamswor@gmail.com",
+        "owner": "grahamswor",
         "repo": "electron-updater-example"
       }
     ],
