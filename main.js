@@ -67,7 +67,7 @@ function createDefaultWindow() {
   win.loadURL(`file://${__dirname}/version.html#v${app.getVersion()}`);
   return win;
 }
-autoUpdater.on('checking-for-update', () => {
+autoUpdater.on('checking-for-update', () => { 
   sendStatusToWindow('Checking for update...');
 })
 autoUpdater.on('update-available', (info) => {
@@ -87,7 +87,7 @@ autoUpdater.on('download-progress', (progressObj) => {
 })
 autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded - please restart LDCT to use latest version');
-  autoUpdater.quitAndInstall();  
+  //autoUpdater.quitAndInstall();  
 });
 app.on('ready', function() {
   // Create the Menu

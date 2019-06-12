@@ -1,9 +1,9 @@
 {
   "name": "electron-updater-example",
-  "version": "1.0.5",
+  "version": "1.0.15",
   "main": "main.js",
-  "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "description": "LDCT auto update prototype",
+  "author": "Graham Swor",
   "scripts": {
     "publish": "build -p always"
   },
